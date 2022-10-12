@@ -1,0 +1,131 @@
+@media(min-width:1200px) and (max-width:1399px){
+    /* ===========catagori part start========== */
+    .categori_img img {
+        width: 230px;
+        height: 220px;
+        object-fit: cover;
+    }
+    /* ===========catagori part end============ */
+    /* ===========shop part start========== */
+    .shop_img img {
+        width: 200px;
+        height: 136px;
+        object-fit: cover;
+    }
+    /* ===========shop part end============ */
+    /* ===========catagori part start========== */
+    /* ===========catagori part end============ */
+    /* ===========catagori part start========== */
+    /* ===========catagori part end============ */
+}
+@media(min-width:992px) and (max-width:1199px){
+    /* ============catagori part start========== */
+    .categori_img img {
+        width: 180px;
+        height: 150px;
+        object-fit: cover;
+    }
+    /* ============catagori part end============ */
+    /* ============add part start=============== */
+    .left_img img {
+        transform: scale(.7);
+    }
+    .add_text a {
+        font-size: 15px;
+        padding: 3px 18px;
+    }
+    /* ============add part end================= */
+    /* ============shop part start=============== */
+    .shop_img img {
+        width: 165px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .prement a {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+    .shop_text h5 {
+        font-size: 17px;
+    }
+    /* ============shop part end================= */
+}
+@media(min-width:768px) and (max-width:991px){
+    /* ============catagori part start============= */
+     .categori_item{
+        margin-bottom: 24px;
+    }
+    /* ============catagori part end=============== */   
+}
+@media(min-width:576px) and (max-width:767px){
+    /* ============catagori part start============= */
+    .categori_item{
+        margin-bottom: 24px;
+    }
+    .categori_img img {
+        width: 190px;
+        height: 150px;
+    }
+    /* ============catagori part end=============== */
+    /* ============shop part start================== */
+    .shop_img img {
+        width: 170px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .shop_item:hover .shop_img img{
+        transform: scale(1.1);
+    }
+    .prement a {
+        font-size: 15px;
+    }
+    .shop_text h5 {
+        font-size: 17px;
+    }
+    /* ============shop part end================== */
+    /* ============coppy part start================ */
+    .back{
+        display: none !important;
+    }
+    /* ============coppy part end================== */
+}
+@media(max-width:575.99px){
+    /* ===============banner part start================ */
+    .banner_text h1 {
+        font-size: 48px;
+    }
+    /* ===============banner part end================== */
+    /* ===============categoris part start============= */
+    .head h3 {
+        font-size: 30px;
+    }
+    .categori_item{
+        margin-bottom: 24px;
+    }
+    /* ===============categoris part end=============== */
+    /* ===============add part start=================== */
+    .left_img img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+    /* ===============add part end===================== */
+    /* ===============shop part start================== */
+    .shop_img img{
+        width: 270px;
+    }
+    .shop_item:hover .shop_img img{
+        transform: scale(1);
+    }
+    /* ===============shop part end==================== */
+    /* ===============footer part start================ */
+    .footer_text h4 {
+        text-align: center;
+    }
+    /* ===============footer part end================== */
+    /* ===============coppy part start================= */
+    .back{
+        display: none !important;
+    }
+    /* ===============coppy part end=================== */
+}

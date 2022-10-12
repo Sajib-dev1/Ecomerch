@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <!-- =============navber part start=============== -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="images/ecommerce-logo-png-11.png" alt="logo">
+        </a>
+        <div class="togle-area d-lg-none">
+          <i class="fa-solid fa-bars show"></i>
+        </div>
+        <div class="slide-bar d-flex justify-content-center align-items-center">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#banner">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#categoris">categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#shop">shop</a>
+            </li>
+          </ul>
+          <div class="crose">
+              <i class="fa-solid fa-xmark close"></i>
+          </div>
+      </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#banner">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#categoris">categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#shop">shop</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <form class="serch_form">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success serch_btn" type="submit">Search</button>
+            </form>
+            <li class="nav-item margin_rt">
+              <a class="nav-link toggle" href="#">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </li>
+            <li class="nav-item margin_rt">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-cart-shopping position-relative"></i>
+                <span class="position-absolute top-1 start-99 translate-middle badge rounded-pill bg-danger">1</span>
+              </a>
+            </li>
+            <li class="nav-item dropdown margin_rt">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-regular fa-user"></i>
+              </a>
+              <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#">Register</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <!-- =============navber part end=============== -->
+    <!-- =============banner part end=============== -->
+    <section id="banner">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+       <div class="container">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="banner_text">
+                <h1>Order <span>Online</span>, Save Your <br>
+                  <span>Time</span></h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur illo laborum optio porro quis reiciendis rerum sapiente velit veniam.</p>
+                  <a href="#">order Now</a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="banner_img">
+                <img src="images/product/f1.png" class="d-block w-100 img-fluid" alt="f1">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="banner_text">
+                <h1>Order <span>Online</span>, Save Your <br>
+                  <span>Time</span></h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequatur illo laborum optio porro quis reiciendis rerum sapiente velit veniam.</p>
+                  <a href="#">order Now <i class="fa-solid fa-arrow-right-long"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="banner_img">
+                <img src="images/product/f3.png" class="d-block w-100 img-fluid" alt="f1">
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- =============banner part end=============== -->
+    <!-- =============Categoris part star=============== -->
+    <section id="categoris">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="head text-center">
+              <h3>Category Products</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="categori_item text-center">
+              <div class="categori_img">
+                <img src="images/catagory/product22.png" alt="product22">
+              </div>
+              <div class="categori_text">
+                <h4>Carrot</h4>
+              </div>
+              <div class="categori_btn">
+                <a href="#">view all<i class="fa-solid fa-arrow-right-long margin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="categori_item text-center">
+              <div class="categori_img">
+                <img src="images/catagory/product23.png" alt="product23">
+              </div>
+              <div class="categori_text">
+                <h4>onion</h4>
+              </div>
+              <div class="categori_btn">
+                <a href="#">view all<i class="fa-solid fa-arrow-right-long margin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="categori_item text-center">
+              <div class="categori_img">
+                <img src="images/catagory/product27.png" alt="product27">
+              </div>
+              <div class="categori_text">
+                <h4>capsicum</h4>
+              </div>
+              <div class="categori_btn">
+                <a href="#">view all<i class="fa-solid fa-arrow-right-long margin"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="categori_item text-center">
+              <div class="categori_img">
+                <img src="images/catagory/product28.png" alt="product28">
+              </div>
+              <div class="categori_text">
+                <h4>broccoli</h4>
+              </div>
+              <div class="categori_btn">
+                <a href="#">view all<i class="fa-solid fa-arrow-right-long margin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =============Categoris part end=============== -->
+    <!-- =============add part star=============== -->
+    <section id="add">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="left_add">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="add_text">
+                    <h6>Fresh Fruits</h6>
+                    <h4>Healthy Food</h4>
+                    <p>Get 20% Off Selected Product</p>
+                    <a href="#">order now</a>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="left_img">
+                    <img src="images/product/f3.png" alt="f3">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="right_add">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="add_text">
+                    <h6>Fresh Fruits</h6>
+                    <h4>Fresh Vegetables</h4>
+                    <p>Get 20% Off Selected Product</p>
+                    <a href="#">order now</a>
+                  </div>
+                </div>
+                <div class="col-lg-8">
+                  <div class="left_img">
+                    <img src="images/product/product27.png" alt="p27">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =============add part end=============== -->
+    <!-- =============shop part star=============== -->
+    <section id="shop">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="shop_text">
+              <h3>Latest Products</h3>
+              <div class="shop_border"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="shop_item">
+              <div class="shop_img text-center">
+                <img src="images/shop/product27.png" alt="p27">
+              </div>
+              <div class="shop_text text-center">
+                <h5>Organic Cauliflower (1kg)</h5>
+                <div class="shop_ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4><i class="fa-solid fa-dollar-sign"></i>200.00</h4>
+              </div>
+              <div class="shop_btn">
+                <div class="prement">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i>add to cart</a>
+                </div>
+                <div class="shop_bt">
+                  <a class="nav-link shop-toggle">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="shop_item">
+              <div class="shop_img text-center">
+                <img src="images/shop/product23.png" alt="p23">
+              </div>
+              <div class="shop_text text-center">
+                <h5>Organic onion (1kg)</h5>
+                <div class="shop_ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4><i class="fa-solid fa-dollar-sign"></i>200.00</h4>
+              </div>
+              <div class="shop_btn">
+                <div class="prement">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i>add to cart</a>
+                </div>
+                <div class="shop_bt">
+                  <a class="nav-link shop-toggle3">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="shop_item">
+              <div class="shop_img text-center">
+                <img src="images/shop/product22.png" alt="p22">
+              </div>
+              <div class="shop_text text-center">
+                <h5>Organic carrot (1kg)</h5>
+                <div class="shop_ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4><i class="fa-solid fa-dollar-sign"></i>200.00</h4>
+              </div>
+              <div class="shop_btn">
+                <div class="prement">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i>add to cart</a>
+                </div>
+                <div class="shop_bt">
+                  <a class="nav-link shop-toggle4">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="shop_item">
+              <div class="shop_img text-center">
+                <img src="images/shop/product28.png" alt="p28">
+              </div>
+              <div class="shop_text text-center">
+                <h5>Organic broccoli (1kg)</h5>
+                <div class="shop_ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4><i class="fa-solid fa-dollar-sign"></i>200.00</h4>
+              </div>
+              <div class="shop_btn">
+                <div class="prement">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i>add to cart</a>
+                </div>
+              
+                <div class="shop_bt">
+                  <a class="nav-link shop-toggle5">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="shop_text">
+              <h3>Most Sell Products</h3>
+              <div class="shop_border"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="shop_item">
+              <div class="shop_img text-center">
+                <img src="images/shop/product1.png" alt="p1">
+              </div>
+              <div class="shop_text text-center">
+                <h5>Organic rice (1kg)</h5>
+                <div class="shop_ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4><i class="fa-solid fa-dollar-sign"></i>200.00</h4>
+              </div>
+              <div class="shop_btn">
+                <div class="prement">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i>add to cart</a>
+                </div>
+                <div class="shop_bt">
+                  <a class="nav-link shop-toggle6">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="shop_item">
+              <div class="shop_img text-center">
+                <img src="images/shop/product2.png" alt="p2">
+              </div>
+              <div class="shop_text text-center">
+                <h5>Organic egg (1kg)</h5>
+                <div class="shop_ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4><i class="fa-solid fa-dollar-sign"></i>200.00</h4>
+              </div>
+              <div class="shop_btn">
+                <div class="prement">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i>add to cart</a>
+                </div>
+                <div class="shop_bt">
+                  <a class="nav-link shop-toggle7">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="shop_item">
+              <div class="shop_img text-center">
+                <img src="images/shop/product3.png" alt="p3">
+              </div>
+              <div class="shop_text text-center">
+                <h5>Organic potato (1kg)</h5>
+                <div class="shop_ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4><i class="fa-solid fa-dollar-sign"></i>200.00</h4>
+              </div>
+              <div class="shop_btn">
+                <div class="prement">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i>add to cart</a>
+                </div>
+                <div class="shop_bt">
+                  <a class="nav-link shop-toggle8">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="shop_item">
+              <div class="shop_img text-center">
+                <img src="images/shop/product4.png" alt="p4">
+              </div>
+              <div class="shop_text text-center">
+                <h5>Organic tometo (1kg)</h5>
+                <div class="shop_ratting">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h4><i class="fa-solid fa-dollar-sign"></i>200.00</h4>
+              </div>
+              <div class="shop_btn">
+                <div class="prement">
+                  <a href="#"><i class="fa-solid fa-cart-shopping"></i>add to cart</a>
+                </div>
+              
+                <div class="shop_bt">
+                  <a class="nav-link shop-toggle9">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =============shop part end=============== -->
+    <!-- =============add2 part star=============== -->
+    <section id="add2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="add-img">
+              <img src="images/banner.jpg" alt="banner" class="w-100 img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =============add2 part end=============== -->
+    <!-- =============footer part star=============== -->
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer_item">
+              <div class="footer_logo">
+                <img src="images/ecommerce-logo-png-11.png" alt="footer_logo">
+              </div>
+              <div class="footer_text">
+                <h4>Get the app</h4>
+                <p>NEfresh App is now available on Google Play & App Store. Get it now.</p>
+                <div class="play">
+                  <img src="images/store1.png" alt="store1">
+                </div>
+                <div class="appl">
+                  <img src="images/store2.png" alt="store2">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer_item">
+              <div class="footer_text text-start">
+                <h4>Information</h4>
+                <ul>
+                  <li><a href="#">about us</a></li>
+                  <li><a href="#">Shipping Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer_item">
+              <div class="footer_text text-start">
+                <h4>User Area</h4>
+                <ul>
+                  <li><a href="#">My account</a></li>
+                  <li><a href="#">My Cart</a></li>
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Checkout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="footer_item">
+              <div class="footer_text text-start">
+                <h4>Contact Info</h4>
+                <div class="footer_text">
+                  <a href="tel:07577985281"><p>07577985281</p></a>
+                  <a href="https://www.google.com.bd/maps/@40.7133188,-74.1961674,12.17z"><p>509 724 580 - issued in New York (NY) on 03/11/2019, expires 08/11/2023</p></a>
+                  <a href="mailto:support@eshop.com"><p>support@eshop.com</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="border_btn"></div>
+      </div>
+    </section>
+    <!-- =============footer part end=============== -->
+    <!-- =============coppy part star=============== -->
+    <section id="coppy">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="coppy_text text-center">
+              <p><a href="#">Copyright &copy; 2021 Web <span>Design</span></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="back">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <!-- =============coppy part end=============== -->
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
